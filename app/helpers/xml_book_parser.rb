@@ -1,18 +1,6 @@
 require 'rexml/document'
 include REXML
 
-class Book
-  attr_accessor :isbn, :title, :author, :publication_year
-  
-  def showBook
-    puts "ISBN: " + @isbn
-    puts "Title: " + @title
-    puts "Author: " + @author
-    puts "Publication Year: " + @publication_year
-    puts "----------------"
-  end
-end
-
 class XMLBookParser
   attr_accessor :books
 
@@ -46,5 +34,14 @@ class XMLBookParser
   end
 end
 
-inventory = XMLBookParser.new('xml.xml')
-inventory.show_books
+class Book
+  attr_accessor :isbn, :title, :author, :publication_year
+  
+  def showBook
+    puts "ISBN: " + @isbn
+    puts "Title: " + @title
+    puts "Author: " + @author
+    puts "Publication Year: " + @publication_year
+    puts "----------------"
+  end
+end

@@ -1,0 +1,19 @@
+<div class="container">
+  <table>
+    <tr>
+      <th>ISBN</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Publication Year</th>
+    </tr>
+    <% books = XMLBookParser.new('./xml.xml').books %>
+    <% books.each do |book| %>
+    <tr>
+      <td><%= book.isbn %></td>
+      <td><%= book.title %></td>
+      <td><%= book.author %></td>
+      <td><%= book.publication_year %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
