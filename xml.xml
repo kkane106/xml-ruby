@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="books.xsd">
+  <book>
+    <isbn>0316769487</isbn>
+    <title>The Catcher in the Rye</title>
+    <author>J.D. Salinger</author>
+    <publication-year>1951</publication-year>
+  </book>
+  <book>
+    <isbn>0316769488</isbn>
+    <title>To Kill a Mockingbird</title>
+    <author>Harper Lee</author>
+    <publication-year>1960</publication-year>
+  </book>
+  <book>
+    <isbn>0316769489</isbn>
+    <title>The Old Man and the Sea</title>
+    <author>Ernest Hemingway</author>
+    <publication-year>1952</publication-year>
+  </book>
+  <book>
+    <isbn>0316769490</isbn>
+    <title>Animal Farm</title>
+    <author>George Orwell</author>
+    <publication-year>1945</publication-year>
+  </book>  
+</books>
